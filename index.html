@@ -15,6 +15,12 @@
         let kkk="";
         do{
           let k=prompt("Enter Your Name with Cast << "+  kkk + sum);
+
+          if(k.match(/[a-bA-Z]{5,}/)===null){
+              alert('Invalid value!! Plese Enter Minumum 5 Charcters')
+              break;
+          }
+            
           kkk=kkk + "  " + "  "+ k + " " + "  ";
           if(k>0 || k<0){
               alert("Erro!! Plese Try Again")
