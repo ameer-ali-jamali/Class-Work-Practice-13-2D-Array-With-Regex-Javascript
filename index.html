@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
+
 
     <script>
         let sum = +0;
-        let kkk="";
-        do{
-          let k=prompt("Enter Your Name with Cast << "+  kkk + sum);
+        let kkk = "";
+        do {
+            let k = prompt("Enter Your Name with Cast << " + kkk + sum);
 
-          if(k.match(/[a-bA-Z]{5,}/)===null){
-              alert('Invalid value!! Plese Enter Minumum 5 Charcters')
-              break;
-          }
+            if (k.match(/[a-zA-Z]{5,}/) === null) {
+                alert("Invalid value!! Plese Enter Minumum 5 Charcters");
+                var cm = prompt("Its Your Last Warning Plese Enter >>....Y....<< For Continue");
+                if(cm=="y"){
+                    continue;
+                }
+                break;
             
-          kkk=kkk + "  " + "  "+ k + " " + "  ";
-          if(k>0 || k<0){
-              alert("Erro!! Plese Try Again")
-              break;
-          }
-          let arr =  [
-[k],
-]
-sum++;
-for(let i=0; i<arr.length; i++){
-    for(let j=0; j<arr.length; j++){
+            }
 
-    }
-    document.write(arr[i]);
+            kkk = kkk + "  " + "  " + k + " " + "  ";
+            if (k > 0 || k < 0) {
+                alert("Erro!! Plese Try Again")
+                break;
+            }
+            let arr = [
+                [k],
+            ]
+            sum++;
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
 
-document.write("<br>");
-document.write("<hr>");
+                }
+                document.write(arr[i]);
 
-}
+                document.write("<br>");
+                document.write("<hr>");
 
-// var kjh = prompt("You Want to continue press // Y");
-var b = confirm("Do You Want to Continue")
-        } while(b==true);
-        alert("You Entered " + sum +" Times");
+            }
+
+            var b = confirm("Do You Want to Continue")
+        } while (b == true || cm == "y" || cm == "Y");
+        alert("You Entered " + sum + " Times");
 
     </script>
 </body>
+
 </html>
