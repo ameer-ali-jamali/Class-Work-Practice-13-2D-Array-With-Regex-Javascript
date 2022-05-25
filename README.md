@@ -1,2 +1,1 @@
-# Class-Work-Practice-23-2D-Array-Javascript
-I created 2Dimansion Array with Regex .
+Today i learned 2d array .and regix in javascript..
